@@ -15,17 +15,16 @@ export default function App() {
       <main className="flex-1 grid place-items-center p-6">
         <section className="text-center max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hi, I'm <span className="text-purple-200">Oussama</span>
-          </h1>
+            Hi, I'm Oussama</h1>
           <p className="text-xl mb-10 leading-relaxed">
             I don't know what I'm doing... but somehow I make it work!
           </p>
           
           {/* Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            <PrimaryButton href="#projects">
+            <OutlineButton href="#projects">
               See My Work
-            </PrimaryButton>
+            </OutlineButton>
             <OutlineButton href="#contact">
               Let's Talk
             </OutlineButton>
@@ -37,17 +36,6 @@ export default function App() {
 }
 
 
-function PrimaryButton({ href, children }) {
-  return (
-    <a 
-      href={href}
-      className="px-8 py-3 rounded-lg font-bold text-lg 
-                 border-2 border-white text-white hover:bg-white hover:text-purple-800"
-    >
-      {children}
-    </a>
-  );
-}
 
 function OutlineButton({ href, children }) {
   return (
